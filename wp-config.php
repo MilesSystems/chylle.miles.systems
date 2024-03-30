@@ -20,16 +20,16 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'CarbonWordPress' );
+define('DB_NAME', 'CarbonWordPress');
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define('DB_USER', 'root');
 
 /** Database password */
-define( 'DB_PASSWORD', 'password' );
+define('DB_PASSWORD', dirname(__DIR__) === '/var/www' ? 'goldteamrules' : 'password');
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define('DB_HOST', dirname(__DIR__) === '/var/www' ? '35.224.229.250' : 'localhost');
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
